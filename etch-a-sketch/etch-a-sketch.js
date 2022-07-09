@@ -1,7 +1,3 @@
-const colorBtn = document.querySelector("#color-btn");
-const rainbowBtn = document.querySelector("#rainbow-btn");
-const eraserBtn = document.querySelector("#eraser-btn");
-const clearBtn = document.querySelector("#clear-btn");
 const drawingArea = document.querySelector(".drawing-area");
 
 for (let i = 0; i < 16 * 16; i++) {
@@ -17,10 +13,19 @@ const gridSquares = document.querySelectorAll(".grid-square");
 gridSquares.forEach((gridSquare) => {
   gridSquare.addEventListener("mouseover", () => {
     gridSquare.style.backgroundColor = "#000000";
-    console.log(gridSquare.style.backgroundColor);
   });
 });
 
-function addBlackBackgroundColor() {}
+const rainbowBtn = document.querySelector("#rainbow-btn");
+const eraserBtn = document.querySelector("#eraser-btn");
+const colorBtn = document.querySelector("#color-btn");
 
-function clearDrawingArea() {}
+function clearDrawingArea() {
+  gridSquares.forEach((gridSquare) => {
+    gridSquare.style.backgroundColor = "#FFFFFF";
+  });
+}
+
+const clearBtn = document.querySelector("#clear-btn");
+
+clearBtn.addEventListener("click", clearDrawingArea);
