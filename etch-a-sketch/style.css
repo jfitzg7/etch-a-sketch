@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu {
+  display: flex;
+}
+
+.drawing-area {
+  width: 60vmin;
+  height: 60vmin;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 5px black;
+}
