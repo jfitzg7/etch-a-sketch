@@ -13,8 +13,18 @@ main {
 
 .menu {
   display: flex;
+  flex-direction: column;
   margin: 5% auto;
+  gap: 10px;
+}
+
+.menu-buttons {
+  display: flex;
   gap: 5px;
+}
+
+.slidebar {
+  margin: auto;
 }
 
 .menu-btn {
@@ -25,6 +35,7 @@ main {
 
 .menu-btn:hover {
   background-color: lightgrey;
+  cursor: pointer;
 }
 
 .activated {

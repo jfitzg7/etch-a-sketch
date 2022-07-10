@@ -13,14 +13,29 @@
     </header>
     <main>
       <div class="menu">
-        <button id="normal-btn" type="button" class="menu-btn activated">
-          Normal Mode
-        </button>
-        <button id="rainbow-btn" type="button" class="menu-btn">
-          Rainbow Mode
-        </button>
-        <button id="eraser-btn" type="button" class="menu-btn">Eraser</button>
-        <button id="clear-btn" type="button" class="menu-btn">Clear</button>
+        <div class="menu-buttons">
+          <button id="normal-btn" type="button" class="menu-btn activated">
+            Normal Mode
+          </button>
+          <button id="rainbow-btn" type="button" class="menu-btn">
+            Rainbow Mode
+          </button>
+          <button id="eraser-btn" type="button" class="menu-btn">Eraser</button>
+          <button id="clear-btn" type="button" class="menu-btn">Clear</button>
+        </div>
+        <div class="slidebar">
+          <input
+            type="range"
+            id="dimension-slider"
+            name="dimension-slider"
+            min="16"
+            max="100"
+            value="16"
+          />
+          <label id="dimension-slider-label" for="dimension-slider"
+            >16 x 16</label
+          >
+        </div>
       </div>
       <div class="drawing-area"></div>
     </main>
