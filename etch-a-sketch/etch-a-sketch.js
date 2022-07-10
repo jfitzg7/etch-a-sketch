@@ -58,6 +58,10 @@ eraserBtn.addEventListener("click", () => {
 clearBtn.addEventListener("click", () => {
   gridSquares.forEach((gridSquare) => {
     gridSquare.style.backgroundColor = "white";
+    normalBtn.classList.add("activated");
+    rainbowBtn.classList.remove("activated");
+    eraserBtn.classList.remove("activated");
+    colorMode = "";
   });
 });
 
