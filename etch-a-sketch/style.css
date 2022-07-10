@@ -11,8 +11,28 @@ main {
   flex-direction: column;
 }
 
-.sidebar-menu {
+.menu {
   display: flex;
+  margin: 5% auto;
+  gap: 5px;
+}
+
+.menu-btn {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+.menu-btn:hover {
+  background-color: lightgrey;
+}
+
+.activated {
+  background-color: grey;
+}
+
+.menu-btn:active {
+  background-color: white;
 }
 
 .drawing-area {
@@ -21,5 +41,5 @@ main {
   border: 2px solid black;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
 }
